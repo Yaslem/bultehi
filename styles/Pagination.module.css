@@ -1,0 +1,28 @@
+.paginate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px;
+}
+.paginate > span{
+    padding: var(--padding-primary);
+    background-color: #163962;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+.paginate > span.no{
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    color: gray;
+    cursor: not-allowed;
+}
+.paginate > div{
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: fit-content;
+    padding: var(--padding-primary);
+    color: gray;
+}

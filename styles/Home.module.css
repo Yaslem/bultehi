@@ -1,0 +1,72 @@
+.index{
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+.welcome{
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+.welcome > div > span{
+  font-size: 40px;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
+.welcome > div:last-of-type{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.welcome > div:last-of-type > div{
+  padding: var(--padding-primary);
+  background-color: #164B60;
+  border-radius: var(--border-radius);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.welcome > div:last-of-type > div > div{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+.welcome > div:last-of-type > div > div > span{
+  font-size: 30px;
+}
+.welcome > div:last-of-type > div > div ul{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  font-size: 14px;
+  list-style: none;
+}
+.welcome > div:last-of-type > div > div ul li{
+  display: flex;
+  padding: var(--padding-primary);
+  background-color: #1B6B93;
+  border-radius: var(--border-radius);
+  gap: 10px;
+  justify-content: space-between;
+}
+.welcome > div:last-of-type > div > div ul li > div{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.welcome > div:last-of-type > div svg{
+  font-size: 40px;
+}
+@media screen and (max-width: 716px) {
+  .welcome > div:last-of-type{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 436px) {
+  .welcome > div:last-of-type{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

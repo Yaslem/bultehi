@@ -1,0 +1,28 @@
+.add{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+.add form{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+.add form > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.add form button{
+    padding: var(--padding-primary);
+    border: 0;
+    background-color: #163962;
+    border-radius: var(--border-radius);
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.add form button:hover{
+    background-color: #b05b3b;
+}

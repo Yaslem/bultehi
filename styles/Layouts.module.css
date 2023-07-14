@@ -1,0 +1,16 @@
+.layouts{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    position: relative;
+}
+.layouts .main{
+    width: 100%;
+}
+.layouts .index{
+    padding: 8px;
+    border: var(--border-primary);
+    background-color: #f0f6fb6e;
+    height: calc(100vh - 112px);
+    overflow-y: auto;
+}

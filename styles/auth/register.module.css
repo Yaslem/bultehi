@@ -1,0 +1,103 @@
+.register{
+    padding: 80px;
+    background-color: var(--background-color);
+}
+.register > div{
+    padding: var(--padding-primary);
+    background-color: white;
+    border-radius: var(--border-radius);
+    display: flex;
+    gap: var(--gap);
+    max-width: 700px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.login{
+    flex-direction: row-reverse;
+}
+.register > div > section:first-of-type{
+    padding: var(--padding-primary);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    width: 70%;
+}
+.register > div > section:first-of-type .footer{
+    text-align: center;
+    font-size: 15px;
+    color: gray;
+}
+.register > div > section:first-of-type .footer a{
+    color: #3c37ff;
+}
+.register > div > section:first-of-type form{
+    transition: all 3s;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+.register > div > section:first-of-type form > div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.register > div > section:first-of-type form > div .forget{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+}
+.register > div .error{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #E06469;
+    margin: 6px 10px 0 0;
+    font-size: 13px;
+}
+.register > div > section:first-of-type form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    padding: 8px;
+    border-radius: var(--border-radius);
+    border: 0;
+    font-size: 18px;
+    color: white;
+    background-color: #3c37ff;
+    cursor: pointer;
+}
+.register > div > section:last-of-type{
+    padding: var(--padding-primary);
+    background-color: var(--backg-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+}
+.loader {
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@media screen and (max-width: 716px) {
+    .register{
+        padding: 40px;
+    }
+}
+@media screen and (max-width: 534px) {
+    .register > div > section:last-of-type{
+        display: none;
+    }
+    .register > div > section:first-of-type{
+        width: 100%;
+    }
+    .register{
+        padding: 20px;
+    }
+}

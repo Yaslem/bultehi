@@ -1,0 +1,102 @@
+.store > form > div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: var(--gap);
+}
+.store > div{
+    display: flex;
+    align-items: center;
+    gap: calc(var(--gap) - 10px);
+    font-size: 15px;
+    color: #9a999f;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    margin-bottom: 30px;
+    width: fit-content;
+    padding: var(--padding-primary);
+}
+.store > div > svg{
+    padding: var(--padding-primary);
+    background-color: white;
+    border-radius: var(--border-radius);
+    border: var(--border-secondary);
+}
+.store form ul{
+    list-style: none;
+    padding: var(--padding-primary);
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--gap) - 10px);
+    border-radius: var(--border-radius);
+}
+.store form ul li{
+    padding: var(--padding-primary);
+    background-color: var(--background-secondary);
+    border-radius: var(--border-radius);
+    border: var(--border-primary);
+    color: gray;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.store form ul li.active{
+    border: var(--border-secondary);
+    color: var(--color-secondary);
+}
+.store form ul li:hover{
+    border: var(--border-secondary);
+    color: var(--color-secondary);
+}
+.store form label{
+    font-size: 15px;
+    color: gray;
+    padding: 6px;
+}
+.store form textarea,
+.store form input,
+.store form select{
+    height: 40px;
+    padding: var(--padding-primary);
+    border: var(--border-primary);
+    border-radius: var(--border-radius);
+    font-size: 15px;
+    color: gray;
+    width: 100%;
+    background-color: white;
+}
+.store form > div:last-of-type textarea,
+.store form > div:first-of-type > div > textarea{
+    height: 200px;
+    resize: none;
+    overflow-y: auto;
+}
+.store form input:focus,
+.store form input:focus,
+.store form textarea:focus{
+    border: var(--border-secondary);
+}
+.store > form > div > div:first-of-type{
+    width: 250px;
+    padding: var(--padding-primary);
+    background-color: white;
+    border-radius: var(--border-radius);
+    height: fit-content;
+    border: var(--border-primary);
+}
+.store > form > div > div:last-of-type{
+    width: calc(100% - 250px);
+}
+.store > form > div > div:last-of-type > section{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+.store > form > div > div:last-of-type > section> div{
+    display: flex;
+    gap: var(--gap);
+}
+.store > form > div > div:last-of-type > section> div > div{
+    width: 50%;
+}

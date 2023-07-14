@@ -1,0 +1,123 @@
+.category{
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    width: 100%;
+    justify-content: space-between;
+    margin-right: auto;
+}
+.category > div{
+    width: 150px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: var(--padding-primary);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+.category > div:hover{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 0px 0px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 0px;
+    border: var(--border-secondary);
+}
+.category > div:hover span{
+    color: var(--background-secondary2);
+}
+.category svg{
+    font-size: 40px;
+    color: #af6242;
+}
+.category div:nth-child(1) svg{
+    color: #22A699;
+}
+.category div:nth-child(2) svg{
+    color: #41644A;
+}
+.category div:nth-child(3) svg{
+    color: #B46060;
+}
+.category span{
+    text-align: center;
+    font-size: 15px;
+    color: grey;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.items > div{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+.items > div > div{
+    padding: var(--padding-primary);
+    padding-bottom: 0;
+}
+
+.items ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.items ul li{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    background-color: #f3f5f6;
+    padding: var(--padding-primary);
+    border-radius: var(--border-radius);
+    color: grey;
+}
+.items ul li p:first-of-type{
+    color: #387fd6;
+}
+.items a{
+    padding: var(--padding-primary);
+    background-color: #163962;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+@media screen and (max-width: 890px) {
+    .category{
+        margin-right: 0;
+    }
+    .items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 534px) {
+    .category > div{
+        width: 117px;
+    }
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 436px) {
+    .category > div{
+        width: 90px;
+    }
+}
+@media screen and (max-width: 355px) {
+    .category > div{
+        width: 72px;
+    }
+    .category svg{
+        font-size: 25px;
+    }
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

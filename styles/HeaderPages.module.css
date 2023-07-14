@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+}
+.header > div:last-of-type{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h3{
+    font-size: 30px;
+    color: #af6242;
+}
+.header span{
+    padding: var(--padding-primary);
+    background-color: var(--background-secondary2);
+    color: white;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 20px;
+    width: 80px;
+    text-align: center;
+}
+@media screen and (max-width: 436px) {
+    .header h3{
+        font-size: 20px;
+    }
+}

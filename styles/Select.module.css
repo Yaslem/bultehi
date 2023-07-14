@@ -1,0 +1,68 @@
+.select{
+    position: relative;
+    text-align: center;
+}
+.select > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: var(--padding-primary);
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    color: gray;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+}
+.select > div.active{
+    background-color: #163962;
+    color: white;
+    box-shadow: var(--box-shadow-0);
+}
+.select > div.active svg{
+    transform: rotate(0deg);
+}
+.select > ul{
+    list-style: none;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    position: absolute;
+    top: 43px;
+    width: 100%;
+    border-radius: var(--border-radius);
+    font-size: 18px;
+    z-index: 6;
+    max-height:266px;
+    overflow: auto;
+    cursor: pointer;
+}
+.select > ul li{
+    padding: var(--padding-primary);
+    background-color: white;
+    cursor: pointer;
+    color: #377ed6;
+    text-align: center;
+}
+.select > ul li:hover{
+    background-color: #eef6fd;
+}
+.select > ul li:not(:last-of-type) {
+    border-bottom: 1px solid #ccc;
+}
+.select > ul li.active{
+    background-color: #b05b3b;
+    color: white;
+}
+@media screen and (max-width: 890px) {
+    .select > div{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 355px) {
+    .select > div{
+        width: 100%;
+        font-size: 14px;
+    }
+}

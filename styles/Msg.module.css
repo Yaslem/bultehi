@@ -1,0 +1,31 @@
+.msg{
+    padding: var(--padding-primary);
+    background-color: #fff0e7;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: auto;
+    gap: var(--gap);
+}
+.msg svg:first-of-type{
+    font-size: 25px;
+    color: #d6863f;
+}
+.msg > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #815e40;
+}
+.msg h5{
+    font-size: 20px;
+}
+.msg p{
+    font-size: 14px;
+}
+.msg svg:last-of-type{
+    font-size: 20px;
+    color: #785237;
+    cursor: pointer;
+}

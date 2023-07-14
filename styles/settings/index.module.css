@@ -1,0 +1,66 @@
+.index{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+.index > section:last-of-type{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+.index > section:last-of-type > div{
+    padding: var(--padding-primary);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.index > section:last-of-type > div svg{
+    font-size: 60px;
+    color: #1464c1;
+}
+.index > section:last-of-type > div div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: gray;
+}
+.index > section:last-of-type h5{
+    font-size: 30px;
+}
+.index > section:last-of-type > div:hover{
+    box-shadow: var(--box-shadow-0);
+    outline: var(--border-secondary);
+}
+.index > section:last-of-type a{
+    padding: var(--padding-primary);
+    background-color: #1464c1;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: var(--border-radius);
+}
+@media screen and (max-width: 716px) {
+    .index > section:last-of-type h5{
+        font-size: 24px;
+    }
+    .index > section:last-of-type > div svg{
+        font-size: 40px;
+    }
+    .index > section:last-of-type a{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 534px) {
+    .index > section:last-of-type{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 355px) {
+    .index > section:last-of-type{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
